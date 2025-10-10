@@ -5,7 +5,7 @@ Possui fundo animado com efeitos visuais, transições suaves entre os produtos 
 funciona tanto no modo automático quanto manual. Totalmente responsivo e com
 navegação por teclado.
 
-🔗 [Veja online aqui](http://127.0.0.1:5500/index.html/)
+🔗 [Veja online aqui](https://mlv90.github.io/Infinity-Store---frontend/)
 
 ## Recursos
 - Fundo com círculos pulsando
