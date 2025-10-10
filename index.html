@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Store</title>
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Infinity Store</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Produtos</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="tech-circle">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+
+      <div class="carousel-container">
+        <div class="list">
+          <!-- ITEM 1 -->
+          <div class="item active">
+            <div class="product-img">
+              <img src="./img/apple-watch.png" alt="Apple Watch" />
+            </div>
+            <div class="content">
+              <p class="product-tag">Lançamento</p>
+              <h2 class="product-name">Apple Watch Series 10</h2>
+              <p class="description">
+                O Apple Watch Series 10: design mais fino, tela maior e
+                inteligência avançada. O parceiro definitivo para uma vida
+                saudável e conectada.
+              </p>
+              <button class="btn">Saiba Mais</button>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="item">
+            <div class="product-img">
+              <img src="./img/air-pods.png" alt="AirPods Max" />
+            </div>
+            <div class="content">
+              <p class="product-tag">Som Premium</p>
+              <h2 class="product-name">AirPods Max</h2>
+              <p class="description">
+                Som de alta fidelidade, cancelamento de ruído e áudio espacial.
+                Uma experiência sonora imersiva em todos os detalhes.
+              </p>
+              <button class="btn">Saiba Mais</button>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="item">
+            <div class="product-img">
+              <img src="./img/vision-pro.png" alt="Vision Pro" />
+            </div>
+            <div class="content">
+              <p class="product-tag">Alta Performance</p>
+              <h2 class="product-name">Vision Pro</h2>
+              <p class="description">
+                O primeiro visor espacial da Apple. O digital e o real se unem
+                criando uma nova dimensão. Um novo jeito de enxergar o futuro.
+              </p>
+              <button class="btn">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTROLES -->
+        <div class="arrows">
+          <button class="arrow-btn" id="prev">❮</button>
+          <button class="arrow-btn" id="next">❯</button>
+        </div>
+
+        <div class="indicators">
+          <div class="numbers">01</div>
+          <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

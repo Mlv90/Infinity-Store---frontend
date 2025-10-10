@@ -1,0 +1,280 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #0f0f1e;
+  color: #ffffff;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: fixed;
+  width: 90vw;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+header .logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00b7ff;
+  letter-spacing: 2px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li:hover {
+  color: #00b7ff;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== FUNDO ANIMADO ===== */
+.tech-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-circle .circle {
+  position: absolute;
+  border: 1px solid rgba(0, 183, 255, 0.3);
+  border-radius: 50%;
+  animation: pulse 8s infinite ease-in-out;
+}
+
+.tech-circle .circle:nth-child(1) {
+  width: 400px;
+  height: 400px;
+  animation-delay: 0s;
+}
+.tech-circle .circle:nth-child(2) {
+  width: 600px;
+  height: 600px;
+  animation-delay: 2s;
+}
+.tech-circle .circle:nth-child(3) {
+  width: 800px;
+  height: 800px;
+  animation-delay: 4s;
+}
+.tech-circle .circle:nth-child(4) {
+  width: 1000px;
+  height: 1000px;
+  animation-delay: 6s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.1;
+  }
+}
+
+/* ===== CARROSSEL ===== */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.list {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 33.333%;
+  padding: 0 40px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: all 0.6s ease;
+}
+
+.item.active {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* ===== PRODUTO ===== */
+.product-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img img {
+  width: 320px;
+  height: auto;
+  filter: drop-shadow(0 0 25px rgba(0, 183, 255, 0.4));
+  transition: transform 0.5s;
+}
+
+.product-img img:hover {
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.product-tag {
+  color: #00b7ff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.description {
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* ===== BOTÃO ===== */
+.btn {
+  background-color: #00b7ff;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #00a0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 183, 255, 0.4);
+}
+
+/* ===== SETAS ===== */
+.arrows {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.arrow-btn {
+  background: none;
+  border: 2px solid #00b7ff;
+  color: #00b7ff;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.arrow-btn:hover {
+  background-color: #00b7ff;
+  color: #fff;
+}
+
+/* ===== INDICADORES ===== */
+.indicators {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.numbers {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  color: #00b7ff;
+  letter-spacing: 2px;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #00b7ff;
+  transform: scale(1.3);
+}
